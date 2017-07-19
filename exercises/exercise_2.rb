@@ -12,7 +12,7 @@ def input_students
 		name = gets.chomp
 	end
 	students
-end 
+end # <--- Interactive student list. ~
 
 
 def header
@@ -25,9 +25,8 @@ def student_list(students)
 		|student, index|
 		indexplusone = index + 1
 		puts "#{indexplusone} - #{student[:name]}, #{student[:cohort]} cohort." if "#{student[:name]}".start_with?("R")
-
 	end
-end # <--- Iteration of the array. ~
+end # <--- Iteration of the array || printing students whose names start with the letter "R". ~
 
 def footer(names)
 	puts "~~~~~~~~~~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~"
