@@ -1,17 +1,5 @@
-# students = [
-# {name: "Dr. Hannibal Lecter", cohort: :November},
-# {name: "Darth Vader", cohort: :November},
-# {name: "Nurse Ratched", cohort: :November},
-# {name: "Michael Corleone", cohort: :November},
-# {name: "Alex DeLarge", cohort: :November},
-# {name: "The Wicked Witch of the West", cohort: :November},
-# {name: "Terminator", cohort: :November},
-# {name: "Freddy Krueger", cohort: :November},
-# {name: "The Joker", cohort: :November},
-# {name: "Joffrey Baratheon", cohort: :November},
-# {name: "Norman Bates", cohort: :November}
-# ] # <--- List of the students. ~
-
+# Rewrite the each() method that prints all students using while or until
+# control flow methods (Loops).
 
 def input_students
 	puts "Please enter the names of the students."
@@ -33,9 +21,12 @@ def header
 end # <--- Header. ~
 
 def student_list(students)
-	students.each_with_index do
-		|student|
+	count = 1
+	while count <= 1 do
+		students.each_with_index do |student|
 		puts "- #{student[:name]}, #{student[:cohort]} cohort."
+		count = count + 1
+		end
 	end
 end # <--- Iteration of the array. ~
 

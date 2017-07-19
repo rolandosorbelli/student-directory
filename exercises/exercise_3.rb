@@ -1,17 +1,5 @@
-# students = [
-# {name: "Dr. Hannibal Lecter", cohort: :November},
-# {name: "Darth Vader", cohort: :November},
-# {name: "Nurse Ratched", cohort: :November},
-# {name: "Michael Corleone", cohort: :November},
-# {name: "Alex DeLarge", cohort: :November},
-# {name: "The Wicked Witch of the West", cohort: :November},
-# {name: "Terminator", cohort: :November},
-# {name: "Freddy Krueger", cohort: :November},
-# {name: "The Joker", cohort: :November},
-# {name: "Joffrey Baratheon", cohort: :November},
-# {name: "Norman Bates", cohort: :November}
-# ] # <--- List of the students. ~
-
+# Modify your program to only print the students whose name is shorter than 12
+# characters.
 
 def input_students
 	puts "Please enter the names of the students."
@@ -24,20 +12,21 @@ def input_students
 		name = gets.chomp
 	end
 	students
-end 
+end # <--- Interactive student list. ~
 
 
 def header
-	puts "The students of Villains Academy"
+	puts "The students of Villains Academy whose names are shorter than 12 characters."
 	puts "~~~~~~~~~~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~"	
 end # <--- Header. ~
 
 def student_list(students)
 	students.each_with_index do
-		|student|
-		puts "- #{student[:name]}, #{student[:cohort]} cohort."
+		|student, index|
+		indexplusone = index + 1
+		puts "#{indexplusone} - #{student[:name]}, #{student[:cohort]} cohort." if "#{student[:name]}".length < 12
 	end
-end # <--- Iteration of the array. ~
+end # <--- Iteration of the array || printing students whose names are shorter than 12 characters. ~
 
 def footer(names)
 	puts "~~~~~~~~~~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~"
