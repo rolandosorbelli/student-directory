@@ -1,18 +1,3 @@
-# students = [
-# {name: "Dr. Hannibal Lecter", cohort: :November},
-# {name: "Darth Vader", cohort: :November},
-# {name: "Nurse Ratched", cohort: :November},
-# {name: "Michael Corleone", cohort: :November},
-# {name: "Alex DeLarge", cohort: :November},
-# {name: "The Wicked Witch of the West", cohort: :November},
-# {name: "Terminator", cohort: :November},
-# {name: "Freddy Krueger", cohort: :November},
-# {name: "The Joker", cohort: :November},
-# {name: "Joffrey Baratheon", cohort: :November},
-# {name: "Norman Bates", cohort: :November}
-# ] # <--- List of the students. ~
-
-
 def input_students
 	puts "Please enter the names of the students."
 	puts "To finish, just hit the return button twice."
