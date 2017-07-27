@@ -13,10 +13,10 @@ The main file is a Ruby file, "directory.rb". Feel free to navigate through it t
 
 ## How to run it ##
 
-\\\
+```
 git clone git@github.com:rolandosorbelli/student-directory.git
 cd student-directory
 ruby directory.rb
-\\\
+```
 
 ## Enjoy!##
