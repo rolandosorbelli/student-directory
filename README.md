@@ -11,7 +11,7 @@ The main file is a Ruby file, "directory.rb". Feel free to navigate through it t
 3. Save the list of the students into a .csv file.
 4. Load the list of the students.
 
-## Eercises ##
+## Exercises ##
 
 It is also present a directory with some exercises based on the same program. Every exercise has the task at the very top, wrapped in comments, and the solution at the bottom. Feel free to fork the repo to access those exercise and practice with Ruby!
 
@@ -23,4 +23,4 @@ cd student-directory
 ruby directory.rb
 ```
 
-## Enjoy!##
+## Enjoy! ##
